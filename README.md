@@ -1,6 +1,6 @@
 # Machine Learning Labs – AGH University
 
-This repository contains mini-projects developed as part of the **Machine Learning** course at AGH University of Science and Technology. Each folder (`labXX`) corresponds to a weekly lab session and is aligned with the content of the respective lecture (`W1`, `W2`, etc.).
+This repository contains mini-projects developed as part of the **Machine Learning** course at AGH University of Krakow. Each folder (`labXX`) corresponds to a weekly lab session and is aligned with the content of the respective lecture.
 
 ## 🧠 Contents
 
