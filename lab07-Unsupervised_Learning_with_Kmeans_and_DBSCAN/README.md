@@ -14,11 +14,11 @@ Then, the cluster assignments from the KMeans model with `k=10` were compared wi
 
 To find a suitable value for the `eps` parameter in DBSCAN, Euclidean distances were calculated between the first 300 samples and all samples in the dataset. Distances equal to zero (self-distance) were ignored. The 10 smallest distances were sorted and saved to `dist.pkl`.
 
-From the 3 smallest values, the average `s` was computed. Then, a range of `eps` values was generated: from `s` to `s + 10% * s` in steps of `4% * s`. For each value, DBSCAN clustering was applied and the number of unique labels (excluding `-1`, which marks outliers) was recorded and saved to `dbscan_len.pkl`.
+From the 3 smallest values, the average `s` was computed. Then, a range of `eps` values was generated: from `s` to `s + 10% * s` in steps of `4% * s`. For each value, DBSCAN clustering was applied and the number of unique labels (including `-1`, which marks outliers) was recorded and saved to `dbscan_len.pkl`.
 
 ### 📊 Comment on DBSCAN Results
 
-The number of detected clusters varied significantly depending on the `eps` value. For instance, the number of clusters for consecutive `eps` values was: **3, 6, and 21**, respectively.
+The number of detected clusters varied significantly depending on the `eps` value. For instance, the number of clusters for consecutive `eps` values was: **4, 7, and 22**, respectively.
 
 This is expected behavior for DBSCAN, which infers the number of clusters based on the density of points rather than assuming a fixed count. Lower `eps` values detect tight clusters and may classify more points as outliers, while higher `eps` values merge more points into broader clusters.
 
