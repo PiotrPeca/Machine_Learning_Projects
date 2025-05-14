@@ -41,18 +41,16 @@ This repository contains mini-projects developed as part of the **Machine Learni
 - Feature importance ranking with decision tree ensembles.
 - Metrics tracked for each ensemble model across training and testing sets.
 
-### 📁 lab07 – Convolutional Neural Networks
-- Dataset: Fashion MNIST (grayscale 28×28 images).
-- Dense vs. convolutional architectures: `Dense`, `Conv2D`, `MaxPooling2D`, `Flatten`.
-- Activation functions: ReLU, Softmax.
-- Data augmentation with `ImageDataGenerator`.
-- Training with `sparse_categorical_crossentropy` loss and `Adam` optimizer.
-- Visualization of feature maps and training logs in TensorBoard.
-
 ### 📁 lab07 – Unsupervised Learning: Clustering
 - Dataset: MNIST-like scanned characters (unknown alphabet).
 - K-Means clustering for \(k=8,9,10,11,12\) (selecting the best of 10 runs by inertia), compute silhouette scores, save to `kmeans_sil.pkl`; map clusters to true labels via confusion matrix and save argmax indices to `kmeans_argmax.pkl`.  
 - DBSCAN clustering: heuristic search for `eps` based on distances among the first 300 samples, record 10 smallest distances in `dist.pkl`; vary `eps` from \(s\) to \(s+0.1s\) in 0.04s increments, count unique labels for each run and save to `dbscan_len.pkl`.
+
+### 📁 lab08 – PCA and Feature Influence Ranking
+- Datasets: Breast Cancer and Iris from scikit-learn.
+- Principal Component Analysis to retain 90% of variance (`n_components=0.9`).
+- Save explained variance ratios (`.pkl`) and feature influence rankings.
+- Implementation of `feature_influence_ranking` using absolute, variance-weighted loadings.
 
 ### 📁 lab09 – Neural Networks: Image Classification & Regression
 - Classification: Fashion MNIST with a dense neural network (300 & 100-unit hidden layers).
