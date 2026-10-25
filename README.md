@@ -57,3 +57,22 @@ This repository contains mini-projects developed as part of the **Machine Learni
 - Regression: California Housing with a dense network and `Normalization` layer.
 - Use of callbacks: TensorBoard for logging, EarlyStopping to prevent overfitting.
 - Manual train/validation/test split; model saving (`.keras`) and comparison of multiple architectures.
+
+### 📁 lab10 – Hyperparameter Tuning for Neural Networks
+- Dataset: California Housing.
+- Randomized search over layers, neurons, optimizer and learning rate using `scikeras` + `RandomizedSearchCV`.
+- The same search with Keras Tuner, logged to TensorBoard.
+- Best hyperparameters (`.pkl`) and best model (`.keras`) saved.
+
+### 📁 lab11 – Image Analysis with CNNs
+- Convolutional neural networks for image classification (`tensorflow_datasets`).
+- Notebook contains the environment setup only – exercises not completed.
+
+### 📁 lab12 – Time Series Prediction with RNNs
+- Dataset: UCI Bike Sharing (hourly rentals, 2011–2012).
+- Naive daily/weekly baselines vs. a linear model, LSTM(1), LSTM(32), deep RNN and a multivariate LSTM.
+- Metric: MAE on a chronological validation split; results saved with `pickle`, models as `.keras`.
+
+### 📁 lab13 – Autoencoders and Denoising
+- Dataset: MNIST.
+- Notebook contains data preparation only – autoencoder exercises not completed.
